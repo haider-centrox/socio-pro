@@ -12,7 +12,7 @@ import logo7 from '../../public/logo7.png';
 
 const Logo: React.FC = () => {
   return (
-    <div className="flex w-full flex-wrap items-center justify-center gap-6">
+    <div className="flex w-full flex-wrap items-center justify-around gap-6">
       <Image
         src={logo1}
         alt="Logo 1"

@@ -10,10 +10,10 @@ export const UserReviewsSlider: React.FC = ({}) => {
             What our users who have used it say?
           </h2>
           <div className="flex items-center gap-2 md:gap-4">
-            <Button className="size-12 rounded-full bg-black text-white md:size-24">
+            <Button className="size-12 rounded-full bg-black text-white md:size-16">
               <ArrowLeft className="size-7 md:size-10" />
             </Button>
-            <Button className="size-12 rounded-full border-2 text-black md:size-24">
+            <Button className="size-12 rounded-full border-2 text-black md:size-16">
               <ArrowRight className="size-7 md:size-10" />
             </Button>
           </div>

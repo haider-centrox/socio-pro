@@ -22,7 +22,7 @@ export default function SocieProHero({
   buttonText = 'FREE',
 }: HeroProps) {
   return (
-    <section className="relative z-20 mx-auto flex flex-col justify-around gap-12 overflow-x-hidden px-4 py-12 md:max-w-[1650px] md:flex-row md:gap-0 md:px-16 md:pb-28">
+    <section className="relative z-20 mx-auto flex w-full flex-col justify-around gap-12 overflow-x-hidden px-4 py-12 md:flex-row md:gap-0 md:px-16 md:pb-28">
       <div className="relative flex flex-col md:max-w-2xl md:py-12">
         <h1 className="mb-4 text-2xl leading-snug font-semibold md:text-4xl">
           {headline}

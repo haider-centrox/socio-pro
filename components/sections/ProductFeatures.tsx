@@ -44,7 +44,7 @@ export const ProductFeatures: React.FC<ProductFeaturesProps> = ({
   features = defaultFeatures,
 }) => {
   return (
-    <div className="text-socie-black mx-auto flex flex-col md:max-w-[1200px]">
+    <div className="text-socie-black mx-auto flex flex-col md:max-w-[1400px]">
       <p className="text-socie-black mx-8 text-center text-2xl font-bold md:mx-40 md:text-[46px]">
         Everything You Need to Plan, Publish, and Grow Your Social Presence
       </p>
