@@ -90,3 +90,49 @@ export const ChatIcon: React.FC<React.SVGProps<SVGSVGElement>> = (props) => (
     ></path>
   </svg>
 );
+
+export const Star = (props: React.SVGProps<SVGSVGElement>) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="16"
+    height="16"
+    fill="none"
+    viewBox="0 0 16 16"
+    {...props}
+  >
+    <path
+      fill="#101010"
+      d="m8 12.216 3.32 2.008a.798.798 0 0 0 1.192-.864l-.88-3.776 2.936-2.544c.536-.464.248-1.344-.456-1.4l-3.864-.328-1.512-3.568c-.272-.648-1.2-.648-1.472 0l-1.512 3.56-3.864.328c-.704.056-.992.936-.456 1.4l2.936 2.544-.88 3.776a.798.798 0 0 0 1.192.864z"
+    ></path>
+  </svg>
+);
+
+export const Arrow = (props: React.SVGProps<SVGSVGElement>) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24"
+    height="24"
+    fill="none"
+    viewBox="0 0 24 24"
+    {...props}
+  >
+    <circle cx="12" cy="12" r="12" fill="url(#paint0_linear_965_784)"></circle>
+    <path
+      fill="#101010"
+      d="m8.15 16.8-.95-.948 6.512-6.498H7.88V8h8.14v8.123h-1.357v-5.821z"
+    ></path>
+    <defs>
+      <linearGradient
+        id="paint0_linear_965_784"
+        x1="24"
+        x2="0"
+        y1="12"
+        y2="12"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop stopColor="#FFE4CB"></stop>
+        <stop offset="1" stopColor="#FF9F4D"></stop>
+      </linearGradient>
+    </defs>
+  </svg>
+);

@@ -17,7 +17,7 @@ export default function RootLayout({
         className={`font-poppins vsc-initialized overflow-x-hidden antialiased`}
         cz-shortcut-listen="true"
       >
-        <div className="bg-socie-peach fixed right-0 bottom-40 z-50 mr-6 mb-8 rounded-full p-5 shadow-sm">
+        <div className="bg-socie-peach fixed right-0 bottom-12 z-50 mr-6 mb-8 rounded-full p-5 shadow-sm">
           <ChatIcon />
         </div>
         {children}

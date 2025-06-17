@@ -55,3 +55,9 @@ body {
 /* * {
   border: 1px solid red;
 } */
+
+.gradient-border {
+  border: 2px solid transparent;
+  border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), transparent) 1;
+  border-radius: 1.5rem !important; /* Matches Tailwind's rounded-3xl */
+}
