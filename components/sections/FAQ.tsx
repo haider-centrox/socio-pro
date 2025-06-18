@@ -2,9 +2,17 @@ import { ChevronDown } from 'lucide-react';
 import { Arrow } from '../icons/icons';
 import { useState } from 'react';
 
-export const FAQ: React.FC = ({}) => {
-  const [openIndex, setOpenIndex] = useState<number | null>(null);
-  const faqs = [
+interface FAQItem {
+  question: string;
+  answer: string;
+}
+
+interface FAQProps {
+  faqs?: FAQItem[];
+}
+
+export const FAQ: React.FC<FAQProps> = ({
+  faqs = [
     {
       question: 'What is Socie-Pro AI, and how does it work?',
       answer:
@@ -35,7 +43,10 @@ export const FAQ: React.FC = ({}) => {
       answer:
         'Yes, Socie-Pro AI offers a 7-day free trial to help you explore the features and see how it works.',
     },
-  ];
+  ],
+}: FAQProps) => {
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
+
   return (
     <div className="font-poppins md: flex w-full justify-center">
       <div className="flex flex-col overflow-x-hidden py-6 text-black md:w-[1200px] md:gap-8">

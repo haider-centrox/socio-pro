@@ -1,10 +1,6 @@
 import React, { useState } from 'react';
-import {
-  CloseIcon,
-  HamburgerIcon,
-  LogoDesktop,
-  LogoMobile,
-} from '../icons/icons';
+import Image from 'next/image';
+import { CloseIcon, HamburgerIcon } from '../icons/icons';
 
 interface NavItem {
   label: string;
@@ -14,6 +10,8 @@ interface NavItem {
 interface HeaderProps {
   logoText?: string;
   navItems?: NavItem[];
+  logoMobile?: string;
+  logoDesktop?: string;
 }
 
 export default function Header({
@@ -23,6 +21,8 @@ export default function Header({
     { label: 'FAQs', href: '#' },
     { label: 'Contact Us', href: '#' },
   ],
+  logoMobile,
+  logoDesktop,
 }: HeaderProps) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -34,10 +34,26 @@ export default function Header({
     <header className="relative flex items-center justify-between px-4 py-2 text-black md:px-24 md:py-6">
       <div className="flex items-center space-x-2">
         <div className="flex items-center justify-center rounded-full md:hidden">
-          <LogoMobile />
+          {logoMobile ? (
+            <Image
+              src={logoMobile}
+              alt="Mobile Logo"
+              width={32}
+              height={32}
+              className="object-contain"
+            />
+          ) : null}
         </div>
         <div className="hidden items-center justify-center rounded-full md:flex">
-          <LogoDesktop />
+          {logoDesktop ? (
+            <Image
+              src={logoDesktop}
+              alt="Desktop Logo"
+              width={40}
+              height={40}
+              className="object-contain"
+            />
+          ) : null}
         </div>
         <span className="font-quantify text-xs md:text-2xl">{logoText}</span>
       </div>

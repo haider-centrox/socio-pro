@@ -20,7 +20,7 @@ export const ConstactUsForm: React.FC<ProductFeaturesProps> = ({}) => {
   const [firstname, setFirstname] = useState('');
   const [lastname, setLastname] = useState('');
   const [status, setStatus] = useState('');
-
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const handleSubmit = async (e: any) => {
     e.preventDefault();
     setStatus('Submitting...');
@@ -62,7 +62,7 @@ export const ConstactUsForm: React.FC<ProductFeaturesProps> = ({}) => {
         setStatus(result.message || 'Something went wrong.');
       }
     } catch (error) {
-      setStatus('Error submitting form.');
+      setStatus(`Error submitting form. ${error}`);
     }
   };
 
